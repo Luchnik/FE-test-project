@@ -1,0 +1,20 @@
+{
+  "name": "fe-test-project",
+  "description": "Simple front-end test project",
+  "main": "index.js",
+  "authors": [
+    "Andriy Luchko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Luchnik/FE-test-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
