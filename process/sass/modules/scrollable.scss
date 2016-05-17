@@ -1,0 +1,69 @@
+#flexiselDemo3 {
+  display:none;
+}
+
+.nbs-flexisel-container {
+    outline: 1px solid red;
+    position: relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:1100px;
+    background:#fcfcfc;
+    border:1px solid #ccc;
+
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    outline: 1px solid green;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:125px;
+    max-height:145px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 25px;
+    height: 45px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.2;
+}
+
+.nbs-flexisel-nav-left {
+    outline: 1px solid red;
+    left: -25px;
+    background: url(../../../builds/images/scrolling/arrow-left.png) no-repeat;
+    background-size: 25px;
+}
+
+.nbs-flexisel-nav-right {
+    outline: 1px solid red;
+    right: 0px;
+    background: url(../../../builds/images/scrolling/arrow-right.png) no-repeat;
+    background-size: 25px;
+}
