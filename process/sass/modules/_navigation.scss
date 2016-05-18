@@ -1,18 +1,74 @@
-ul.top-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $brown;
+.headnav {
+    height: 55px;
+    background-color: $grey;
 
-		li {
-		    float: left;
-				a {
-				    display: block;
-				    color: white;
-				    text-align: center;
-				    padding: 14px 16px;
-				    text-decoration: none;
-				}
-		}
+    ul.top-nav {
+        list-style-type: none;
+        overflow: hidden;
+
+    		li {
+    		    float: left;
+
+            .icon-home {
+              width: 18px;
+              margin-right: 6px;
+              margin-bottom: 3px;
+            }
+
+            .icon-git {
+              height: 16px;
+              margin-left: 28px;
+              margin-right: 5px;
+            }
+
+            .icon-person {
+              height: 17px;
+              margin-left: 36px;
+              margin-right: 4px;
+            }
+
+            & > a > img.search-icon {
+              height: 23px;
+            }
+
+    				a {
+              font-family: $font-nav-light;
+              font-weight: 300;
+              font-style: italic;
+  				    color: white;
+  				    text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+    				}
+
+            #searchbox {
+              padding: 7px;
+              height: 31px;
+              border: solid 1px $white;
+              background-color: $searchbox-back;
+              font-family: $font-nav-light;
+              font-weight: 400;
+              font-style: italic;
+              margin-top: 12px;
+              color: $white;
+
+              &::-webkit-input-placeholder {
+                color: $white;
+              }
+              &:-moz-placeholder {
+               color: $white;
+               opacity: 1;
+              }
+              &::-moz-placeholder {
+               color: $white;
+               opacity: 1;
+              }
+              &:-ms-input-placeholder {
+               color: $white;
+              }
+            }
+    		}
+    }
 }
