@@ -1,8 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700); // a la  Myriad Pro
 
+// general colors
 $grey: #898989;
 $white: #ffffff;
+$black: #020202;
 $searchbox-back: #a1a1a1;
 
-$font-nav-light: 'Poppins', sans-serif;
-$font-nav-regular: 'Poppins', sans-serif;
+$carousel-text-color: #6e6e6e;
+$carousel-indicator-color: #a7a7a9;
+
+$jumbo-border-color: #e4e4e4;
+
+$back-jumbo-btn: #2784bc;
+$back-jumbo-btn-hover: #47a5de;
+
+$font: 'Poppins', sans-serif;
+$font-jumbo-btn: 'PT Sans', sans-serif;
