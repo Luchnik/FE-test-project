@@ -1,69 +1,63 @@
-#flexiselDemo3 {
-  display:none;
+$assetPath : "/images";
+
+#flexisel {
+  display: none;
 }
 
 .nbs-flexisel-container {
-    outline: 1px solid red;
-    position: relative;
-    max-width:100%;
+  position:relative;
+  max-width:100%;
 }
 .nbs-flexisel-ul {
-    position:relative;
-    width:99999px;
-    margin:0px;
-    padding:0px;
-    list-style-type:none;
+  position:relative;
+  width: 99999px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
 }
 
 .nbs-flexisel-inner {
-    overflow:hidden;
-    float:left;
-    width:1100px;
-    background:#fcfcfc;
-    border:1px solid #ccc;
-
+  overflow:hidden;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  height: 125px;
 }
 
 .nbs-flexisel-item {
-    float:left;
-    margin:0px;
-    padding:0px;
-    position:relative;
-    line-height:0px;
+  float:left;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  line-height:0px;
+  img {
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      max-width:125px;
+      max-height: 125px;
+  }
 }
-.nbs-flexisel-item img {
-    outline: 1px solid green;
-    width: 100%;
-    cursor: pointer;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width:125px;
-    max-height:145px;
-}
-
-/*** Navigation ***/
 
 .nbs-flexisel-nav-left,
 .nbs-flexisel-nav-right {
-    width: 25px;
-    height: 45px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    opacity: 0.2;
+  opacity: 0.2;
+  width: 20px;
+  height: 45px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
 }
 
 .nbs-flexisel-nav-left {
-    outline: 1px solid red;
-    left: -25px;
-    background: url(../../../builds/images/scrolling/arrow-left.png) no-repeat;
-    background-size: 25px;
+  left: 0px;
+  background: url(#{$assetPath}/scrolling/arrow-left.svg) no-repeat;
 }
 
 .nbs-flexisel-nav-right {
-    outline: 1px solid red;
-    right: 0px;
-    background: url(../../../builds/images/scrolling/arrow-right.png) no-repeat;
-    background-size: 25px;
+  right: 0px;
+  background: url(#{$assetPath}/scrolling/arrow-right.svg) no-repeat;
 }

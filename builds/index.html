@@ -180,26 +180,22 @@
 
     <!-- Divider -->
     <hr>
-    <!--
-    <span class="separator">
-      <img src="images/icons/diamond.svg" alt="diamond">
-    </span>-->
 
     <!-- Scrollable list -->
     <div class="row">
       <div class="col-sm-12">
-        <ul id="flexiselDemo3">
-          <li><img src="images/scrolling/logo1.png"></li>
-          <li><img src="images/scrolling/logo2.png"></li>
-          <li><img src="images/scrolling/logo3.png"></li>
-          <li><img src="images/scrolling/logo4.png"></li>
-          <li><img src="images/scrolling/logo5.png"></li>
+        <ul id="flexisel">
+          <li><img src="images/scrolling/logo1.png" alt="logotex"></li>
+          <li><img src="images/scrolling/logo2.png" alt="text-space"></li>
+          <li><img src="images/scrolling/logo3.png" alt="text space"></li>
+          <li><img src="images/scrolling/logo4.png" alt="text here"></li>
+          <li><img src="images/scrolling/logo5.png" alt="company"></li>
         </ul>
       </div>
     </div>
 
     <!-- Quotes -->
-    <div class="row">
+    <div class="row" style="outline:1px solid red;">
       <blockquote>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi?
       Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor.
@@ -260,12 +256,10 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/jquery.flexisel.js"></script>
   <script>
-    $(document).ready(function() {
-      $("#flexiselDemo3").flexisel({
+  $(document).ready(function() {
+      $("#flexisel").flexisel({
           visibleItems: 5,
-          animationSpeed: 400,
-          autoPlay: false,
-          autoPlaySpeed: 3000,
+          animationSpeed: 600,
           enableResponsiveBreakpoints: true,
           responsiveBreakpoints: {
               portrait: {
