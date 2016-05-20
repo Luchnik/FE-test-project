@@ -1,0 +1,19 @@
+$assetPath : "/images";
+
+hr {
+  position: relative;
+  margin: 80px 16px;
+  color: $separator-color;
+}
+
+hr:before {
+  content: url(#{$assetPath}/icons/diamond.svg);
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  background: $white;
+  z-index: 1;
+  height: 64px;
+  width: 60px;
+  margin: -35px;
+}
