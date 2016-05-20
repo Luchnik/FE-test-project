@@ -1,0 +1,54 @@
+div.row-top {
+  h2 {
+    text-align: center;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 400;
+    color: $black;
+  }
+
+  p {
+    text-align: center;
+    color: $grey;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  div.col-lg-4.col-sm-12 {
+    margin-top: 100px;
+  }
+}
+
+div.row-bottom {
+  .content {
+    background-color: $blue;
+    width: 360px;
+    height: 460px;
+    margin: 87px 15px 0 15px;
+    padding: 0;
+
+    h2 {
+      text-align: left;
+      font-family: $font;
+      font-size: 24px;
+      font-weight: 400;
+      color: $black;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    p {
+      text-align: left;
+      color: $white;
+      font-family: $font;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      margin-left: 30px;
+      margin-bottom: 5px;
+    }
+  }
+}

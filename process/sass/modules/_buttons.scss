@@ -22,3 +22,39 @@
     }
   }
 }
+
+p.button {
+  .btn {
+    margin: 0;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 14px;
+    color: $black;
+    background-color: $white;
+    text-transform: none;
+    padding: 6px 15px;
+    border: 2px solid $readmore-btn-border;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+div.row-bottom {
+  .content {
+    a {
+      font-family: $font;
+      font-weight: bold;
+      font-size: 14px;
+      color: $white;
+      text-decoration: none;
+      border-bottom: 1px solid $white;
+      margin-left: 30px;
+
+      &:hover {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
