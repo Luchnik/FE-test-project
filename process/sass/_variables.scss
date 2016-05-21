@@ -1,17 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700); // a la  Myriad Pro
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 // general colors
 $grey: #898989;
 $white: #ffffff;
 $black: #000000;
 $blue: #47a5de;
+$quote-back: #ededed;
 $searchbox-back: #a1a1a1;
 
 $carousel-text-color: #6e6e6e;
 $carousel-indicator-color: #a7a7a9;
-
 $jumbo-border-color: #e4e4e4;
+$bloquote-color: $carousel-text-color;
 
 $back-jumbo-btn: #2784bc;
 $back-jumbo-btn-hover: #47a5de;

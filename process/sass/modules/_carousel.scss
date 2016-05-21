@@ -1,12 +1,12 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 #myCarousel {
-  width: 1280px;
+  min-width: 100%;
+
   .carousel-control {
     width: 58px;
 
@@ -71,8 +71,12 @@ ol.carousel-indicators li {
 .jumbotron {
   border-top: 2px solid $jumbo-border-color;
   margin: 0; padding: 0;
+
+  .specialjum {
+    background-color: $quote-back;
+  }
+
   .container {
-      outline: 0px solid green;
       width: 1280px;
       padding-left: 0;
       padding-right: 0;
