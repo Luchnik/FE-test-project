@@ -1,3 +1,7 @@
+header {
+  z-index: -100;
+}
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   margin: 0 auto;
@@ -82,3 +86,65 @@ ol.carousel-indicators li {
       padding-right: 0;
   }
 }
+
+
+@media only screen and (max-width : 768px) {
+  header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .carousel-caption {
+    position: absolute;
+    top:10px;
+    top: 40px;
+    width: 400px;
+    height: 150px;
+    h1 {
+      font-size: 16pt;
+      margin: 10px 0 0 43px;
+    }
+    p {
+      font-size: 8pt;
+    }
+    .carousel-btn {
+      .call-btn {
+        margin: 10px 0 0 45px;
+      }
+    }
+  }
+}
+/*
+@media only screen and (max-width : 480px) {
+  .carousel-caption {
+    padding: 0;
+    position: absolute;
+    left: 28px;
+    top: 40px;
+    width: 645px;
+    height: 250px;
+    background-color: $white;
+    opacity: 0.85;
+    h1 {
+      color: $black;
+      text-align: left;
+      text-transform: uppercase;
+      font-family: $font;
+      font-weight: 400;
+      font-size: 35pt;
+      text-shadow: none;
+      margin: 45px 0 13px 43px;
+
+    }
+    p {
+      text-align: left;
+      font-family: $font;
+      font-weight: 400;
+      font-size: 13.47pt;
+      text-shadow: none;
+      color: $carousel-text-color;
+      margin: 0 0 0 43px;
+    }
+  }
+}*/

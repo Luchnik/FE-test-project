@@ -1,74 +1,95 @@
-.headnav {
+.top {
+  background-color: $grey;
+
+  .row-top {
     height: 55px;
-    background-color: $grey;
+  }
 
-    ul.top-nav {
-        list-style-type: none;
-        overflow: hidden;
+  .search {
 
-    		li {
-    		    float: left;
+    .search-content {
+      float: right;
 
-            .icon-home {
-              width: 18px;
-              margin-right: 6px;
-              margin-bottom: 3px;
-            }
+      & > a > img.search-icon {
+        height: 23px;
+      }
+      #searchbox {
+        margin-right: 7px;
+        padding: 7px;
+        height: 30px;
+        width: 150px;
+        border: solid 1px $white;
+        background-color: $searchbox-back;
+        font-family: $font;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        color: $white;
 
-            .icon-git {
-              height: 16px;
-              margin-left: 28px;
-              margin-right: 5px;
-            }
-
-            .icon-person {
-              height: 17px;
-              margin-left: 36px;
-              margin-right: 4px;
-            }
-
-            & > a > img.search-icon {
-              height: 23px;
-            }
-
-    				a {
-              font-family: $font;
-              font-weight: 300;
-              font-style: italic;
-  				    color: white;
-  				    text-decoration: none;
-
-              &:hover {
-                text-decoration: underline;
-              }
-    				}
-
-            #searchbox {
-              padding: 7px;
-              height: 30px;
-              border: solid 1px $white;
-              background-color: $searchbox-back;
-              font-family: $font;
-              font-weight: 400;
-              font-style: italic;
-              margin-top: 12px;
-              color: $white;
-
-              &::-webkit-input-placeholder {
-                color: $white;
-              }
-              &:-moz-placeholder {
-               color: $white;
-               opacity: 1;
-              }
-              &::-moz-placeholder {
-               color: $white;
-               opacity: 1;
-              }
-              &:-ms-input-placeholder {
-               color: $white;
-              }
-            }
-    		}
+        &::-webkit-input-placeholder {
+          color: $white;
+        }
+        &:-moz-placeholder {
+         color: $white;
+         opacity: 1;
+        }
+        &::-moz-placeholder {
+         color: $white;
+         opacity: 1;
+        }
+        &:-ms-input-placeholder {
+         color: $white;
+        }
+      }
     }
+  }
+
+}
+
+.headnav {
+  height: 55px;
+  background-color: $grey;
+  margin-left: -30px;
+
+  ul.top-nav {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 18px 0 0 0;
+
+		li {
+	    float: left;
+
+      .icon-home {
+        width: 18px;
+        margin-left: 10px;
+        margin-right: 6px;
+        margin-bottom: 3px;
+      }
+
+      .icon-git {
+        height: 16px;
+        margin-left: 28px;
+        margin-right: 5px;
+      }
+
+      .icon-person {
+        height: 17px;
+        margin-left: 36px;
+        margin-right: 4px;
+      }
+
+			a {
+        font-family: $font;
+        font-weight: 300;
+        font-style: italic;
+		    color: white;
+		    text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+			}
+  	}
+  }
 }
