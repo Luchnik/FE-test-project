@@ -1,1 +1,31 @@
 
+.footer {
+  background-color: $blue;
+
+  .row-inline {
+    height: 72px;
+
+    .rights {
+      color: $white;
+      font-family: $font;
+      font-size: 13.5px;
+      font-weight: 300;
+      margin-top: 30px;
+    }
+
+    .wrapper {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social {
+      margin-bottom: 20px;
+      display: inline-block;
+      overflow: hidden;
+      cursor: pointer;
+      margin-left: 8px;
+      float: right;
+    }
+
+  }
+}

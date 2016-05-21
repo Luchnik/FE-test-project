@@ -15,33 +15,33 @@ blockquote {
   border: none;
   position: relative;
 
+  p.quote {
+    max-width: 575px;
+    min-height: 120px;
+  	font-size: 17px;
+    line-height: 24px;
+    background-color: $white;
+    padding-top: 25px;
+    padding-left: 72px;
+    padding-right: 35px;
+    color: $carousel-text-color;
+  }
+
+  p.credit {
+  	color: $blue;
+    font-family: $font;
+    font-weight: 300;
+  	font-size: 14px;
+  	margin-top: 0;
+  	padding-left: 20px;
+  	line-height: 1.3em;
+    margin-left: 50px;
+  	position: relative;
+  }
+
   span {
     color: $carousel-text-color;
   }
-}
-
-blockquote p.quote {
-  max-width: 575px;
-  min-height: 120px;
-	font-size: 18px;
-  line-height: 24px;
-  background-color: $white;
-  padding-top: 25px;
-  padding-left: 72px;
-  padding-right: 35px;
-  color: $carousel-text-color;
-}
-
-blockquote p.credit {
-	color: $blue;
-  font-family: $font;
-  font-weight: 300;
-	font-size: 14px;
-	margin-top: 0;
-	padding-left: 20px;
-	line-height: 1.3em;
-  margin-left: 50px;
-	position: relative;
 }
 
 blockquote::before {

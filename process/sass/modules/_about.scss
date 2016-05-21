@@ -1,0 +1,87 @@
+$assetPath : "/images";
+
+.row-about {
+  background-color: $grey;
+
+  h2 {
+    color: $white;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 12px;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $white;
+  }
+
+  p {
+    color: $white;
+    font-family: $font;
+    font-size: 13.5px;
+    font-weight: 300;
+
+    a, a:visited {
+      color: $contact-link-color;
+    }
+  }
+
+  .col-lg-8 {
+    width: 240px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .col-sm-4 input {
+    padding-top: 4px;
+    padding-left: 13px;
+    margin-bottom: 12px;
+    height: 30px;
+    width: 100%;
+    border: solid 1px $email-input-color;
+    background-color: $white;
+    font-family: $font;
+    font-weight: 400;
+    color: $black;
+
+    &::-webkit-input-placeholder {
+      color: $grey;
+    }
+    &:-moz-placeholder {
+     color: $grey;
+     opacity: 1;
+    }
+    &::-moz-placeholder {
+     color: $grey;
+     opacity: 1;
+    }
+    &:-ms-input-placeholder {
+     color: $grey;
+    }
+  }
+
+}
+
+p.phone {
+  margin-bottom: -10px;
+}
+
+p.phone:before {
+  content: "";
+  display: block;
+  background: url(#{$assetPath}/icons/phone-icon.svg) no-repeat;
+  width: 11px;
+  height: 18px;
+  float: left;
+  margin: 0 6px 0 2px;
+  color: $white;
+}
+
+p.email:before {
+  content: "";
+  display: block;
+  background: url(#{$assetPath}/icons/email-icon.svg) no-repeat;
+  width: 15px;
+  height: 10px;
+  float: left;
+  margin: 3px 5px 0 0;
+}
